@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush - Computer Science Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">☰</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <br><br><br><br>
+            <h1>Hi, I'm Ayush Gorlawar</h1>
+            <p class="subtitle">Computer Science Engineer</p>
+            <p class="tags">AI/ML Engineer | IoT Developer | Web Development</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+
+            <!-- Image Below Contact Me Button -->
+            <img src="hero.jpg" alt="Ayush Hero Image" class="hero-image" />
+        </div>
+
+        <style>
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-image {
+                margin-top: 80px;
+                width: 290px;
+                /* choti image */
+                height: auto;
+                border-radius: 42px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section section-bg">
+        <h2 class="section-title fade-in">About</h2>
+        <div class="about-content fade-in">
+            <div class="about-text">
+                <h3>My Introduction</h3>
+                <p>I'm a passionate and proactive Computer Science student with a strong focus on Machine Learning and
+                    IoT development. Over the past years, I've developed a solid foundation in Machine Learning, Python,
+                    JavaScript, Core Java, C++, Web Development, and embedded systems through various projects and
+                    contributions.</p>
+                <p>I have worked on diverse projects ranging from AI-powered security systems like Malware Classifier,
+                    IoT solutions such as Forest Fire Detection System, advanced chatbots using DialoGPT, and creative
+                    applications like AI Music Suggestion Agent. My expertise spans across cybersecurity, healthcare AI,
+                    image processing, and embedded programming.</p>
+                <p>Currently, I'm focusing on creating impactful projects that leverage artificial intelligence and IoT
+                    to solve real-world problems. With over 43 repositories on GitHub and contributions to various
+                    domains, I aim to contribute my skills and creativity to the tech industry, making a positive
+                    difference in society.</p>
+            </div>
+            <div class="about-image">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">43+</div>
+                        <div class="stat-label">GitHub Repositories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">48+</div>
+                        <div class="stat-label">GitHub Stars</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">AI/ML Projects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .portfolio-cards {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .portfolio-image {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #4a90e2;
+        }
+
+        .portfolio-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .portfolio-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .portfolio-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .center-container {
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2 class="section-title fade-in">Portfolio</h2>
+        <div class="portfolio-grid fade-in">
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Malware Classifier using AI</h3>
+                    <p class="portfolio-description">A Python-based machine learning system for detecting malicious
+                        executable files through static analysis of PE (Portable Executable) files using advanced ML
+                        algorithms.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Security</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Forest Fire Detection System</h3>
+                    <p class="portfolio-description">Smart forest fire detection and alerting system using Arduino UNO
+                        R3, equipped with GSM, GPS modules, DHT sensor for real-time monitoring and alerts.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">IoT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">AI ChatBot with DialoGPT</h3>
+                    <p class="portfolio-description">A state-of-the-art large-scale pretrained response generation model
+                        using DialoGPT for intelligent conversation capabilities.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">DialoGPT</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Sentiment Analysis Chat Bot</h3>
+                    <p class="portfolio-description">Advanced chatbot capable of analyzing and responding to user
+                        emotions through sophisticated sentiment analysis algorithms.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">AI Music Suggestion Agent</h3>
+                    <p class="portfolio-description">AI-Powered Mood & Weather Music Generator that recommends music
+                        based on current weather conditions and user mood analysis.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">API Integration</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Heart Disease Prediction Model</h3>
+                    <p class="portfolio-description">Machine learning model for predicting heart disease risk using
+                        patient data and advanced classification algorithms.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Healthcare</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-spider"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">ESP HoneyPot</h3>
+                    <p class="portfolio-description">Cybersecurity honeypot implementation using ESP microcontroller to
+                        detect and analyze network intrusion attempts.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">ESP8266</span>
+                        <span class="tech-tag">Security</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Subway Surfers in ESP</h3>
+                    <p class="portfolio-description">Mini version of the popular game implemented on ESP32
+                        microcontroller with simple graphics and controls for obstacle dodging.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Game Dev</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">ESP8266 Weather Station</h3>
+                    <p class="portfolio-description">IoT weather monitoring system using ESP8266 for real-time weather
+                        data collection and web-based dashboard display.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">ESP8266</span>
+                        <span class="tech-tag">IoT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Image Text Extractor</h3>
+                    <p class="portfolio-description">Web-based OCR application for extracting text from images and
+                        removing watermarks using Tesseract.js engine.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">OCR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Image to Pencil Sketch Converter</h3>
+                    <p class="portfolio-description">AI-powered tool that converts regular photographs into artistic
+                        pencil sketches using computer vision algorithms.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Image Processing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Plagiarism AI Detection</h3>
+                    <p class="portfolio-description">Advanced plagiarism detection system using artificial intelligence
+                        to identify copied content and ensure academic integrity.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="center-container">
+            <a href="https://github.com/AyushGorlawar?tab=repositories" class="cta-button">More Projects</a>
+        </div>
+    </section>
+</body>
+</html>
+    <!-- Experience Section -->
+    <section id="experience" class="section section-bg">
+        <h2 class="section-title fade-in">Experience</h2>
+        <div class="experience-timeline fade-in">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Jul 2024 - Aug 2024</div>
+                    <h3 class="timeline-title">AI/ML Intern</h3>
+                    <p class="timeline-company">InternPe · Remote</p>
+                    <p class="timeline-description">Worked in the AI/ML domain, engaging in various projects that
+                        deepened understanding of machine learning algorithms and artificial intelligence applications.
+                        Collaborated with a dedicated team, contributing to impactful projects and honing skills in data
+                        analysis, model training, and implementation. Enhanced technical and professional capabilities
+                        through hands-on experience with cutting-edge AI technologies.</p>
+                    <div class="timeline-skills">
+                        <span class="skill-tag">Artificial Intelligence</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Model Training</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Jun 2024 - Jul 2024</div>
+                    <h3 class="timeline-title">Machine Learning Intern</h3>
+                    <p class="timeline-company">Prodigy InfoTech · Remote</p>
+                    <p class="timeline-description">Completed comprehensive machine learning internship focusing on
+                        computer engineering applications. Worked on various ML projects and gained practical experience
+                        in implementing machine learning solutions. Successfully completed the internship program with
+                        certification.</p>
+                    <div class="timeline-skills">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Computer Engineering</span>
+                        <span class="skill-tag">Python Programming</span>
+                        <span class="skill-tag">Data Science</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3 class="timeline-title">Open Source Contributor</h3>
+                    <p class="timeline-company">GitHub Community</p>
+                    <p class="timeline-description">Active contributor to open source projects with 43+ repositories and
+                        48+ stars. Developed diverse projects spanning AI/ML, IoT, cybersecurity, and web development.
+                        Maintained and contributed to various tech communities and collaborative projects.</p>
+                    <div class="timeline-skills">
+                        <span class="skill-tag">Open Source</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Community Building</span>
+                        <span class="skill-tag">Project Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="section">
+    <h2 class="section-title fade-in">Certificates</h2>
+    <div class="portfolio-grid fade-in">
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">AWS Academy Cloud Foundations</h3>
+                <p class="portfolio-description">AWS Academy Graduate certification covering cloud computing fundamentals and AWS services.</p>
+                <div class="certificate-date">May 2025</div>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Microsoft Azure Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Microsoft Azure AI Fundamentals</h3>
+                <p class="portfolio-description">Microsoft certified in Azure AI services, machine learning, and conversational AI technologies.</p>
+                <div class="certificate-date">Jun 2024</div>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Reliance_Foundation_Logo.svg/2560px-Reliance_Foundation_Logo.svg.png" alt="Reliance Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">AI Solutions Architect Programme</h3>
+                <p class="portfolio-description">Comprehensive certification in AI solution architecture and machine learning implementation.</p>
+                <div class="certificate-date">Mar 2025 • Reliance Foundation</div>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6X8-4XYhgqMBqVNUzGmFkgjmjuvKKlZ97A&s" alt="Government of India Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">IoT-Network Specialist</h3>
+                <p class="portfolio-description">NSDC certified specialist in IoT networks, microcontrollers, and embedded systems programming.</p>
+                <div class="certificate-date">Mar 2025 • NSDC</div>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://newhorizoncollegeofengineering.in/wp-content/uploads/2024/12/SIH_logo_2024_horizontal.png" alt="Government of India Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Smart India Hackathon 2024</h3>
+                <p class="portfolio-description">National Finalist in India's premier hackathon competition organized by Government of India.</p>
+                <div class="certificate-date">Dec 2024 • AICTE</div>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Python Programming Certifications</h3>
+                <p class="portfolio-description">Multiple certifications from Google, IIT Bombay covering Python fundamentals and advanced concepts.</p>
+                <div class="certificate-date">2023-2025</div>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Unsupervised Machine Learning</h3>
+                <p class="portfolio-description">IBM certification in unsupervised ML techniques, clustering algorithms, and deep learning concepts.</p>
+                <div class="certificate-date">Apr 2025 • IBM</div>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/UC_Davis_wordmark.png" alt="UC Davis Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Fundamentals of Visualization with Tableau</h3>
+                <p class="portfolio-description">Certifications in Tableau and R programming for advanced data visualization and analysis.</p>
+                <div class="certificate-date">Apr 2025 • UC Davis</div>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-image">
+                <img src="https://upload.wikimedia.org/wikipedia/sa/d/da/IIT_Bombay_logo.png" alt="IIT Bombay Logo" class="cert-logo">
+            </div>
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Java Programming</h3>
+                <p class="portfolio-description">Comprehensive Java training certification from Indian Institute of Technology, Bombay.</p>
+                <div class="certificate-date">Apr 2024 • IIT Bombay</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .certificate-date {
+        font-size: 12px;
+        color: #666;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    
+    .cert-logo {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+    
+    .portfolio-card:hover .cert-logo {
+        filter: grayscale(0%);
+    }
+    
+    .portfolio-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    /* Fallback for logos that might not load */
+    .cert-logo:not([src]) {
+        display: none;
+    }
+    
+    .cert-logo:not([src]) + .portfolio-content::before {
+        content: "🏆";
+        font-size: 48px;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+</style>    
+
+
+<style>
+    .certificate-date {
+        font-size: 12px;
+        color: #666;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+</style>
+<!-- Contact Section -->
+<section id="contact" class="section section-bg">
+    <h2 class="section-title fade-in">Contact</h2>
+    
+    <div class="contact-container fade-in">
+        <div class="contact-info">
+
+            <!-- Email -->
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                     <p>
+                        <a href="mailto:ayushgorlawar91@gmail.com" target="_blank">
+                            ayushgorlawar91@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+                <i class="fab fa-linkedin-in"></i>
+                <div>
+                    <h4>LinkedIn</h4>
+                    <p>
+                        <a href="https://www.linkedin.com/in/ayush-gorlawar/" target="_blank">
+                            linkedin.com/in/ayush-gorlawar
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <div>
+                    <h4>GitHub</h4>
+                    <p>
+                        <a href="https://github.com/AyushGorlawar" target="_blank">
+                            github.com/AyushGorlawar
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy;2025 Ayush Gorlawar. All rights reserved.</p>
+</footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+ 
+
+        // Portfolio card interactions with GitHub links
+        const projectLinks = {
+            'Malware Classifier using AI': 'https://github.com/AyushGorlawar/Malware-Classifier-using-AI',
+            'Forest Fire Detection System': 'https://github.com/AyushGorlawar/Forest-Fire-Detection-System',
+            'AI ChatBot with DialoGPT': 'https://github.com/AyushGorlawar/AI-ChatBot-with-DialoGPT',
+            'Sentiment Analysis Chat Bot': 'https://github.com/AyushGorlawar/Sentiment-analysis-chat-bot',
+            'AI Music Suggestion Agent': 'https://github.com/AyushGorlawar/AI-agent-Music-suggestion',
+            'Heart Disease Prediction Model': 'https://github.com/AyushGorlawar/Heart-Disease-Prediction-Model',
+            'ESP HoneyPot': 'https://github.com/AyushGorlawar/ESP-HoneyPot',
+            'Subway Surfers in ESP': 'https://github.com/AyushGorlawar/Subway-Surfers-in-ESP',
+            'ESP8266 Weather Station': 'https://github.com/AyushGorlawar/ESP8266-Weather-Station',
+            'Image Text Extractor': 'https://github.com/AyushGorlawar/Image-Text-Extractor---Watermark-Removal',
+            'Image to Pencil Sketch Converter': 'https://github.com/AyushGorlawar/Image-to-Pencil-Sketch-Converter-using-AI',
+            'Plagiarism AI Detection': 'https://github.com/AyushGorlawar/Plagiarism-AI-Detection'
+        };
+
+        document.querySelectorAll('.portfolio-card').forEach(card => {
+            card.addEventListener('click', function () {
+                const title = this.querySelector('.portfolio-title').textContent;
+                const githubLink = projectLinks[title];
+
+                if (githubLink) {
+                    const confirmOpen = confirm(`Visit ${title} on GitHub?\n\n${githubLink}`);
+                    if (confirmOpen) {
+                        window.open(githubLink, '_blank');
+                    }
+                } else {
+                    alert(`Project: ${title}\n\nGitHub link coming soon!`);
+                }
+            });
+        });
+
+      
+        // Add typing effect to hero subtitle
+        const subtitle = document.querySelector('.hero .subtitle');
+        const text = subtitle.textContent;
+        subtitle.textContent = '';
+
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                subtitle.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+        setTimeout(typeWriter, 1000);
+    </script>
+</body>
+
+</html>
