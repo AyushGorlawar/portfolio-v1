@@ -27,6 +27,7 @@ Hi! I'm Ayush — an aspiring AI Analyst and B.Tech CSE student. This portfolio 
 - CSS3
 - JavaScript (Vanilla)
 - Responsive Design
+- bootstrap 5
 
 
 
